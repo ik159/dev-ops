@@ -8,7 +8,7 @@ function App() {
 
   const getList = async () => {
     try {
-      const resp = await axios.get('http://localhost:6005/api');
+      const resp = await axios.get('http://localhost:7000/api');
       setList(resp.data.data);
         console.log(resp.data);
     } catch (error) {
@@ -24,7 +24,7 @@ function App() {
  const handleSubmit = async(e) => {
    e.preventDefault();
    try {
-     const res = await axios.post("http://localhost:6005/api" ,{name : name , email: email});
+     const res = await axios.post("http://localhost:7000/api" ,{name : name , email: email});
    } catch (error) {
     console.log(error)
    }
