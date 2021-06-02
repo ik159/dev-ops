@@ -37,7 +37,7 @@ function App() {
     <div style={{  position: "relative" , height:'100vh'}}>
       <div style={{position: "absolute" ,top: "50%" ,left: "30%"}}>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="fname">Name:</label>
+        <label htmlFor="fname">Your Name:</label>
         <input type="text" id="fname" name="fname" onChange={(e) => (setName(e.target.value))} value={name}/>
         <label htmlFor="lname">Email:</label>
         <input type="text" id="lname" name="lname" onChange={(e) => (setEmail(e.target.value))} value={email}/>
