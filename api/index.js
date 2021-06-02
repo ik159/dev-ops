@@ -19,4 +19,4 @@ mongoose.connect(process.env.MONGO_URI ,
 const postRoute = require('./routes/postRoute')
 app.use('/api' , postRoute);
 
-app.listen(7000 , () => { console.log("server up");})
+app.listen(7000 , () => { console.log("server up " + "mongoose " + mongoose.connection.readyState);})
