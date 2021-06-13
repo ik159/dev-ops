@@ -26,7 +26,7 @@ function App() {
    try {
      const res = await axios.post('/api' ,{name : name , email: email});
    } catch (error) {
-    console.log(error)
+    console.log(error.response.data);
    }
   getList();
   setName('')

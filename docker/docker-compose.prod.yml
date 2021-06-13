@@ -11,9 +11,9 @@ services:
         volumes:
             - ../api:/usr/src/api
         expose:
-            - 8000
+            - 7000
         ports:
-            - 8000:8000
+            - 7000:7000
         env_file: ../api/.env
         environment:
             WAIT_HOSTS: db:27018,redis:6379
